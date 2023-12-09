@@ -6,7 +6,7 @@ const middlewares = jsonServer.defaults();
 server.use(jsonServer.bodyParser);
 server.use(middlewares);
 
-server.get("reset", (req, res) => {
+server.get("/reset", (req, res) => {
   router.db.set("userResponses", []).write();
   res.sendStatus(200);
 });
@@ -14,10 +14,26 @@ server.get("reset", (req, res) => {
 server.post("/submit-response", (req, res) => {
   const { quizId, selectedOptions, timeTaken } = req.body;
 
-  router.db
-    .get("userResponses")
-    .push({ quizId, selectedOptions, timeTaken })
-    .write();
+  const answer = router.db.get("userResponses").find({ quizId }).value();
+
+  if (answer) {
+    let userResponses = router.db.get("userResponses").value();
+
+    userResponses = userResponses.map((answer) => {
+      if (answer.quizId === quizId) {
+        return { quizId, selectedOptions, timeTaken };
+      }
+
+      return answer;
+    });
+
+    router.db.set("userResponses", userResponses).write();
+  } else {
+    router.db
+      .get("userResponses")
+      .push({ quizId, selectedOptions, timeTaken })
+      .write();
+  }
 
   res.sendStatus(200);
 });

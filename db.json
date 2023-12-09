@@ -3,7 +3,7 @@
     {
       "quizId": 1,
       "text": "Which famous scientist developed the theory of relativity?",
-      "image": "https://images.unsplash.com/photo-1532635228-c0f8d72d1ae9?q=80&w=1420&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image": "https://dummyimage.com/600x400/fff/000",
       "options": [
         "Isaac Newton",
         "Galileo Galilei",
@@ -31,7 +31,7 @@
     {
       "quizId": 3,
       "text": "What is the largest mammal on Earth?",
-      "image": "https://images.unsplash.com/photo-1560807707-8cc77767d783?q=80&w=1420&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image": "https://dummyimage.com/600x400/fff/000",
       "options": [
         "Elephant",
         "Blue Whale",
@@ -59,7 +59,7 @@
     {
       "quizId": 5,
       "text": "Who wrote 'Romeo and Juliet'?",
-      "image": "https://images.unsplash.com/photo-1555290551-36b5df0ad49a?q=80&w=1420&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image": "https://dummyimage.com/600x400/fff/000",
       "options": [
         "William Shakespeare",
         "Jane Austen",
@@ -67,6 +67,7 @@
         "Emily Brontë"
       ],
       "correctOption": [
+        "Jane Austen",
         "William Shakespeare"
       ]
     },
@@ -87,7 +88,7 @@
     {
       "quizId": 7,
       "text": "In which year did the Titanic sink?",
-      "image": "https://images.unsplash.com/photo-1559827291-7e6d6ef3f7db?q=80&w=1420&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image": "https://dummyimage.com/600x400/fff/000",
       "options": [
         "1910",
         "1925",
@@ -115,7 +116,7 @@
     {
       "quizId": 9,
       "text": "Who was the first President of the United States?",
-      "image": "https://images.unsplash.com/photo-1593642532454-8d29cf6eaa0c?q=80&w=1420&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image": "https://dummyimage.com/600x400/fff/000",
       "options": [
         "Abraham Lincoln",
         "Thomas Jefferson",
