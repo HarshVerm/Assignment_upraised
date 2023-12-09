@@ -60,7 +60,6 @@ server.get("/score-report", (req, res) => {
   const totalTime = userResponses.reduce((acc, val) => acc + val.timeTaken, 0);
 
   const correctAnswers = userResponses.filter((res) => {
-    console.log(res);
     const question = router.db
       .get("questions")
       .find({ quizId: res.quizId })
