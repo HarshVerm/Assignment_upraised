@@ -6,10 +6,9 @@ const middlewares = jsonServer.defaults();
 server.use(jsonServer.bodyParser);
 server.use(middlewares);
 
-server.post("/start-quiz", (req, res) => {
+server.get("reset", (req, res) => {
   router.db.set("userResponses", []).write();
-  const quizId = 1;
-  res.json({ quizId, nextQuizId: quizId + 1 });
+  res.sendStatus(200);
 });
 
 server.post("/submit-response", (req, res) => {
