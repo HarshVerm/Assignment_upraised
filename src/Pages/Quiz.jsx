@@ -100,14 +100,15 @@ const Quiz = () => {
             handleSelectOption={handleSelectOption}
           />
         )}
-
-        <Button
-          variant="contained"
-          onClick={nextQuizId === -1 ? getScore : submitResponse}
-          disabled={selectedOptions?.length === 0}
-        >
-          {nextQuizId === -1 ? "Finish" : "Next"}
-        </Button>
+        <Box className="display-center">
+          <Button
+            variant="contained"
+            onClick={nextQuizId === -1 ? getScore : submitResponse}
+            disabled={selectedOptions?.length === 0}
+          >
+            {nextQuizId === -1 ? "Finish" : "Next"}
+          </Button>
+        </Box>
       </Box>
     </div>
   );
