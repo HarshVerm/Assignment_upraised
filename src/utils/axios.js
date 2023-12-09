@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const localURL = "http://localhost:3001";
+const localURL = "https://mockserver-vfmt.onrender.com/";
 
 const instance = axios.create({
   baseURL: localURL,
